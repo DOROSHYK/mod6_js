@@ -85,3 +85,17 @@
 // const numbers = [1, 2, 3, 4, 5];
 // const pureMultiply = changeEven(numbers, 10);
 // console.log(numbers);
+
+// palindrom
+// function palindrome(string){
+//     var reverseString = '';
+//     for(var k in string){
+//        reverseString += string[(string.length - k) - 1];
+//     }
+//   if(string === reverseString){
+//     console.log('Hey there palindrome');
+//   }else{
+//     console.log('You are not a palindrome');
+//   }
+// }
+// palindrome("mam");
