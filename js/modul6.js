@@ -482,13 +482,13 @@
  * getAllPropValues('category') возвращает []
  */
 
-const products = [
-  { name: 'Asus', price: 1300, quantity: 4 },
-  { name: 'Huawei', price: 2700, quantity: 3 },
-  { name: 'HP', price: 400, quantity: 7 },
-  { name: 'Dell', price: 1200, quantity: 9 },
-  { name: 'Apple', price: 1400 },
-];
+// const products = [
+//   { name: 'Asus', price: 1300, quantity: 4 },
+//   { name: 'Huawei', price: 2700, quantity: 3 },
+//   { name: 'HP', price: 400, quantity: 7 },
+//   { name: 'Dell', price: 1200, quantity: 9 },
+//   { name: 'Apple', price: 1400 },
+// ];
 
 // const getAllPropValues = propName => {
 //  return products.map(elem => elem[propName])
@@ -499,6 +499,86 @@ const products = [
 
 
 // console.log(getAllPropValues('name')); // ['Asus', 'Huawei', 'HP', 'Dell', 'Apple']
-console.log(getAllPropValues('quantity')); // [4, 3, 7, 9]
+// console.log(getAllPropValues('quantity')); // [4, 3, 7, 9]
 
 // console.log(getAllPropValues('category')); // []
+
+
+
+
+// Коллекция записей
+// Вам дается буквальный объект, представляющий часть вашей коллекции музыкальных альбомов. Каждый альбом имеет уникальный идентификационный номер в качестве ключа и несколько других свойств. Не все альбомы содержат полную информацию.
+
+// Вы начинаете с updateRecordsфункции, которая принимает объектный литерал, recordsсодержащий коллекцию музыкальных альбомов, an id, a prop(like artistor tracks) и a value. Завершите функцию, используя приведенные ниже правила, чтобы изменить объект, переданный в функцию.
+
+// Ваша функция всегда должна возвращать весь объект коллекции записей.
+// // Если propнет , tracksи valueне пустая строка, обновление или набор этого альбома propв value.
+// Если propесть, tracksно у альбома нет tracksсвойства, создайте пустой массив и добавьте valueк нему.
+// Если propесть tracksи valueне является пустой строкой, добавьте valueв конец существующего tracksмассива альбома .
+// Если valueэто пустая строка, удалите данное propсвойство из альбома.
+
+var recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Only change code below this line
+// function updateRecords(records, id, prop, value){
+//   if (value === "") {
+//     delete records[id][prop];
+//   } 
+//   else if (prop === "tracks") {
+//     records[id][prop] = records[id][prop] || [];
+//    records[id][prop].push(value); 
+//   }
+//   else {
+//     records[id][prop] = value
+//   }
+  
+//   return records;
+// }
+
+// console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
+////////////////////////////////
+///////////////////////////////
+
+// Объявить и инициализировать переменную totalв 0. Используйте forцикл, чтобы добавить значение каждого элемента myArrмассива total.
+// var myArr = [ 2, 3, 4, 5, 6];
+// var total = 0;
+// for (var i = 0; i < myArr.length; i++) {
+//   console.log(total += myArr[i]);
+  
+
+// }
+
+//////////////////////////////////////////////////////////////////////
+// function multiplyAll(arr) {
+//   var product = 1;
+//   // Only change code below this line
+//   for (var i = 0; i < arr.length; i++) {
+//   //  product += arr[i];
+//     for (var b = 0; b < arr[i].length; b++) {
+//      console.log(product *= arr[i][b]);
+//     }
+//   }
+//   console.log(product);
+//   // Only change code above this line
+// // return product;
+// }
+
+// multiplyAll([[1],[2],[3]]);
