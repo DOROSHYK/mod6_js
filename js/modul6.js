@@ -585,23 +585,30 @@ var recordCollection = {
 
 // palindrome/////////////////////////////////////////////
 
-  function palindrome(str){
-    var reverseString = str.toLowerCase();
-    // console.log(reverseString.split('').join('').replace(/[\s.,%]/g, ''));
-    for (let i = 0; i < reverseString.length / 2; i += 1) {
-      // console.log(reverseString.length / 2);
-      if(reverseString !== reverseString.split('').reverse().join('').replace(/[\s.,%]/g, '').length -1){
-    console.log(false);
-  }else {
-   console.log(true);
-  }
-    }
+//   function palindrome(str){
+//     var reverseString = str.toLowerCase();
+//     // console.log(reverseString.split('').join('').replace(/[\s.,%]/g, ''));
+//     for (let i = 0; i < reverseString.length / 2; i += 1) {
+//       // console.log(reverseString.length / 2);
+//       if(reverseString !== reverseString.split('').reverse().join('').replace(/[\s.,%]/g, '').length -1){
+//     console.log(false);
+//   }else {
+//    console.log(true);
+//   }
+//     }
   
   
-}
+// }
 
 
 
 
-palindrome("A man, a plan, a canal. Panama");
+// palindrome("A man, a plan, a canal. Panama");
 // str.replace(/[\s.,%]/g)
+
+const map = el => el * el;
+// console.log(el);
+const arr = Array.from([1, 2, 3], map);
+console.log(arr);
+const finish = arr.join('');
+// console.log(finish);
