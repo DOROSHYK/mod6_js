@@ -582,3 +582,26 @@ var recordCollection = {
 // }
 
 // multiplyAll([[1],[2],[3]]);
+
+// palindrome/////////////////////////////////////////////
+
+  function palindrome(str){
+    var reverseString = str.toLowerCase();
+    // console.log(reverseString.split('').join('').replace(/[\s.,%]/g, ''));
+    for (let i = 0; i < reverseString.length / 2; i += 1) {
+      // console.log(reverseString.length / 2);
+      if(reverseString !== reverseString.split('').reverse().join('').replace(/[\s.,%]/g, '').length -1){
+    console.log(false);
+  }else {
+   console.log(true);
+  }
+    }
+  
+  
+}
+
+
+
+
+palindrome("A man, a plan, a canal. Panama");
+// str.replace(/[\s.,%]/g)
